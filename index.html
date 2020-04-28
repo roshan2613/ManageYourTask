@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ManageYourTask</title> 
+    <link rel="icon bar image" href="img/preview-xl.jpg">
+    <style>
+      html, body {
+        width:100%;
+        height:100%;
+        margin:0px;
+        padding:0px;
+        font-size: 16px;
+        font-family: Helvetica;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      *:active {
+        outline:none;
+      }
+      
+      #content {
+        display:grid;
+        grid-template-columns: 150px auto;
+        height:100%;
+      }
+
+      #nav {
+        width: 100%;
+        height: 50px;
+        text-align:center;
+        height:100%;
+        background-color:#ffcc88;
+
+      }
+      
+      #nav a {
+        line-height:50px;
+        text-decoration:none;
+        color: black;
+        font-variant:small-caps;
+        font-size: 32px;
+        display: block;
+      }
+
+      #nav a:hover {
+        background-color: rgba(0,0,0,0.1)
+      }
+
+      main {
+        display:inline-block;
+        margin:0px;
+        height:100%;
+      }
+      
+      .page {
+        display: none;
+        background-color:#ffeecc;
+        padding-left:20px;
+        padding-top:20px;
+        margin:0px;
+        height: 100%;
+      }
+      
+      .page h1 {
+        margin:0px;
+      }
+      
+      .default {
+        display:block;
+      }
+      
+      :target {
+        display:block;
+      }
+      
+      :target ~ .default {
+        display:none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <nav id="nav">
+        <a href="#About">About</a>
+        <a href="#UI">UI</a>
+        <a href="#Instruction">How to Use</a>
+      </nav>
+
+
+      <main>
+
+
+        <div id="UI" class="page">
+          <h1>User InterFace</h1>
+          <p>We have developed an intuitate and easy to use interface for our users</p>
+          <h2>Here are some pictures of our UserInterFace in our Application</h2>
+
+        <ul>
+          <img src="img/stepA.jpg"  width="250" height="500">
+        </ul>
+
+        <ul>
+          <img src="img/stepB.jpg"  width="250" height="500">
+        </ul>
+
+        <ul>
+          <img src="img/stepC.jpg"  width="250" height="500">
+        </ul>
+
+        <ul>
+          <img src="img/stepD.jpg"  width="250" height="500">
+        </ul>
+
+        <ul>
+          <img src="img/stepE.jpg"  width="250" height="500">
+        </ul>
+
+        <ul>
+          <img src="img/stepF.jpg"  width="250" height="500">
+        </ul>
+
+
+
+
+         
+
+
+          
+
+
+        </div>
+
+
+        <div id="Instruction" class="page">
+          <h1>Instructions on using ManageYourTask Application</h1>
+          <ol>
+            <li>Add button (+) in the toolbar makes you to create new tasks</li>
+            <li>Tasks are placed in the priority order and Tasks with the same priority order are arranged alphabetically</li>
+            <li>Each task has Edit and Delete buttons if you want to change the details or remove the task</li>
+            <li>Setting in the toolbar adjusts the length and day of timer</li>
+            <li>Pending Tasks in this app : Adding a Timer to the tasks are next steps in the app development</li>
+          </ol>
+        </div>
+
+
+
+        <div id="About" class="page default">
+          <h1>ManageYourTask Application</h1>
+          <p>This application lets users create and manage their tasks and also reminds them of when they have scheduled it. 
+            It also lets users allocate their time for each task and smartly reminds them if it overlaps with another task they have created.</p>
+
+            
+          <h3>Features of ManageYourTask Application</h3>
+          <ul>
+            <li>Any number of tasks</li>
+            <li>Tasks with goals</li>
+            <li>Tasks with indefinite goals (no goal)</li>
+            <li>Task descriptions</li>
+            <li>Start, pause, reset, delete, edit tasks</li>
+            <li>Progress bars</li>
+            <li>Prioritize tasks based on the order</li>
+            <li>Edit task names, time spent, and goal-times</li>
+            <li>Desktop notifications</li>
+            <li>Sound notifications (default and custom)</li>
+          </ul>  
+        </div>
+
+
+      </main>
+    </div>
+  </body>
+</html>
+
